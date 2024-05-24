@@ -8,11 +8,41 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody",
+"class": "Entity",
+"language": "GDScript",
+"path": "res://scripts/entities/entity.gd"
+}, {
+"base": "Entity",
+"class": "Girl",
+"language": "GDScript",
+"path": "res://scripts/entities/girl.gd"
+}, {
+"base": "Entity",
+"class": "Player",
+"language": "GDScript",
+"path": "res://scripts/entities/player.gd"
+} ]
+_global_script_class_icons={
+"Entity": "",
+"Girl": "",
+"Player": ""
+}
+
 [application]
 
 config/name="Origami 1"
 run/main_scene="res://scenes/outdoor.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/dpi/allow_hidpi=true
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [gui]
 
